@@ -69,7 +69,7 @@ bool Graph::hasPath(const std::string& vname1, const std::string& vname2) {
     return false;
 }
 
-// MODIFIED: This function now returns the full DijkstraPair with the path string and cost
+// This function now returns the full DijkstraPair with the path string and cost
 Graph::DijkstraPair Graph::getShortestPath(const std::string& src, const std::string& dst) {
     std::priority_queue<DijkstraPair> pq;
     std::unordered_map<std::string, bool> visited;
