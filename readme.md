@@ -19,12 +19,12 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/RajRajeshwar8863/Metro-For-All-Cities.git
+git clone https://github.com/RajRajeshwar8863/Metro-For-all-Cities.git
 Navigate to the project directory:
 
 Bash
 
-cd Metro-For-All-Cities
+cd Metro-For-all-Cities
 Compile the source code:
 
 Bash
@@ -48,15 +48,6 @@ Metro-For-All-Cities/
 ├── Graph.h                  # Header file for the Graph class
 ├── Graph.cpp                # Implementation of the Graph class and algorithms
 └── README.md                # This file
-📸 Screenshots Of Project
-(A GIF is highly recommended here to showcase the app's functionality! Replace the placeholder links below with your actual images.)
-
-City Selection Menu:
-![City Selection Menu](path/to/your/city_selection_image.png)
-
-Final Travel Summary:
-![Final Travel Summary](path/to/your/summary_image.png)
-
 🎯 How to Use
 Select a City: When the application starts, choose a city from the list.
 
