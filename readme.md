@@ -1,128 +1,154 @@
-All-India Metro Navigator 🚇
-A powerful and efficient command-line application built in C++ that finds the shortest path between any two metro stations in major Indian cities. This project leverages graph theory and Dijkstra's algorithm to provide users with a fast, interactive, and intuitive navigation tool.
+🚇 All-India Metro Navigator
+
+A powerful and efficient command-line application built in C++ that finds the shortest path between any two metro stations in major Indian cities.
+This project leverages graph theory and Dijkstra's algorithm to provide users with a fast, interactive, and intuitive navigation tool.
 
 ✨ Features
-🏙️ Multi-City Support: Seamlessly switch between different metro networks, including Delhi, Mumbai, and Bangalore.
 
-⚡️ Fast & Accurate Pathfinding: Implements Dijkstra's algorithm from scratch for optimal and efficient shortest route calculation.
+🏙️ Multi-City Support: Seamlessly switch between metro networks, including Delhi, Mumbai, and Bangalore
 
-🎨 Rich Terminal Interface: A clean, color-coded, and user-friendly interface for an intuitive experience.
+⚡️ Fast & Accurate Pathfinding: Implements Dijkstra’s algorithm from scratch for optimal route calculation
 
-📊 Detailed Travel Summary: Provides a comprehensive summary including the full route, distance, station count, and an estimated fare.
+🎨 Rich Terminal Interface: Color-coded, clean, and user-friendly command-line UI
+
+📊 Detailed Travel Summary: Shows full route, station count, distance, and estimated fare
 
 🚀 Quick Start
-Prerequisites
+📋 Prerequisites
+
 A C++ compiler (e.g., g++)
 
-Installation & Running
+🛠️ Installation & Running
+
 Clone the repository:
 
-Bash
-
 git clone https://github.com/RajRajeshwar8863/Metro-For-all-Cities.git
-Navigate to the project directory:
 
-Bash
+
+Navigate to the project folder:
 
 cd Metro-For-all-Cities
+
+
 Compile the source code:
 
-Bash
-
 g++ main.cpp Graph.cpp -o MetroApp
+
+
 Run the application:
 
-On Windows (Command Prompt):
-
-Bash
+On Windows (CMD):
 
 MetroApp
-On Linux, macOS, or modern Windows terminals (PowerShell/Git Bash):
 
-Bash
+
+On Linux/macOS or PowerShell/Git Bash:
 
 ./MetroApp
+
 📁 Project Structure
 Metro-For-All-Cities/
-├── main.cpp                 # Main application driver, UI, and logic
-├── Graph.h                  # Header file for the Graph class
-├── Graph.cpp                # Implementation of the Graph class and algorithms
-└── README.md                # This file
+├── main.cpp        # Main driver, UI, and program logic
+├── Graph.h         # Graph class header
+├── Graph.cpp       # Graph algorithms implementation
+└── README.md       # Project documentation
+
 🎯 How to Use
-Select a City: When the application starts, choose a city from the list.
 
-Choose an Action: Select an option from that city's metro menu.
+Select a City
+Choose a metro network (Delhi, Mumbai, or Bangalore).
 
-Find a Route:
+Choose an Action
+Pick an option from that city’s menu.
 
-Select option 3. Get Shortest Path and Fare.
+Find a Route
 
-Enter the full name of the Source Station.
+Select option 3. Get Shortest Path and Fare
 
-Enter the full name of the Destination Station.
+Enter Source Station (full name)
 
-View Results: The application will display a detailed summary of the optimal route.
+Enter Destination Station (full name)
 
-Change City: Select option 4. Change City to return to the main city selection screen.
+View Results
+Get the optimal route, total distance, station count, and fare.
+
+Change City
+Use option 4. Change City to return to the main menu.
 
 🏙️ Supported Cities
-The application currently supports navigation for the following metro networks:
 
-Delhi
+Delhi Metro
 
-Mumbai
+Mumbai Metro
 
-Bangalore
+Bangalore Metro
 
-The architecture is designed to be easily expandable for more cities.
+(Easily expandable to more cities in future.)
 
 🛠️ Technical Details
-Backend Logic: C++
 
-Core Concepts: Data Structures & Algorithms (DSA)
+Language: C++
+
+Core Concepts: Graphs + DSA
 
 Data Structures:
 
-Graph: Adjacency List implementation to represent the metro network.
+Graph: Adjacency List
 
-Priority Queue: std::priority_queue used as a Min-Heap to optimize Dijkstra's algorithm.
+Priority Queue: std::priority_queue (Min-Heap)
 
-Hash Maps: std::unordered_map and std::map for efficient vertex lookups and multi-city management.
+Hash Maps: std::unordered_map, std::map
 
-Algorithm: Dijkstra's Shortest Path Algorithm for route calculation.
+Algorithm: Dijkstra’s Shortest Path
 
-Interface: Interactive Command-Line Interface (CLI) with ANSI color codes for a rich user experience.
+Interface: Interactive CLI with ANSI colors
 
 🔧 Customization
-Adding a new city to the navigator is simple:
+➕ Adding New City
 
-Add City Data: In Graph.cpp, create a new function void Create_NewCity_Map(Graph& g) and populate it with the new city's station and connection data.
+In Graph.cpp, create a new function:
 
-Declare the Function: Add the function declaration void Create_NewCity_Map(Graph& g); to Graph.h.
+void Create_NewCity_Map(Graph& g) { ... }
 
-Integrate into Main: In main.cpp, create a new Graph object for the city and add it to the metroSystems map.
+
+Declare it in Graph.h.
+
+Add the new Graph object in main.cpp under metroSystems.
 
 🤝 Contributing
-Contributions are welcome! Please feel free to fork the repository, create a feature branch, and open a pull request.
 
-Fork the Project
+Contributions are welcome! 🚀
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+Fork the repo
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
+Create a feature branch
 
-Push to the Branch (git push origin feature/AmazingFeature)
+git checkout -b feature/AmazingFeature
+
+
+Commit your changes
+
+git commit -m "Add some AmazingFeature"
+
+
+Push to the branch
+
+git push origin feature/AmazingFeature
+
 
 Open a Pull Request
 
 📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
 
 🔮 Future Enhancements
-[ ] Add metro networks for more cities (Kolkata, Chennai, Hyderabad).
 
-[ ] Load metro data from external files (.csv or .json) for better scalability.
+ Add metro networks for Kolkata, Chennai, Hyderabad
 
-[ ] Develop a Graphical User Interface (GUI) using a framework like Qt.
+ Load metro data from external .csv or .json files
 
-Made with ❤️ using C++ and a passion for problem-solving.
+ GUI version using Qt framework
+
+💡 Made with ❤️ in C++ for problem-solving and efficient urban navigation.
